@@ -1,0 +1,147 @@
+body{
+  font-size: 1em;
+  background-color: white;
+  }
+
+  .anchorCSS { 
+    background-color: #FF00FF;
+    color: white;
+    text-align: center;
+    border: black 1px solid;
+   font-size: 1em; 
+   text-decoration: none; 
+   padding: 2px;
+   margin-bottom: 50px;
+   margin-left: 10px;
+  }
+  .category{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px pink;
+  }
+  .wholeGrid{
+    display:grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+              "head"
+              "category"
+              "flowerName"
+              "image"
+              "price"
+              "instruction"
+              "foot"
+              "link";
+    gap:1px;
+    place-items: center;          
+  }
+  .link{
+    grid-area: link;
+  }
+  .head{
+    grid-area: head;
+    font-size: 15px;
+    color:  black;
+    text-shadow: 1px 1px 0px red;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0px 10px 0px 10px;
+  }
+ 
+  #header{
+     overflow: hidden;
+  }
+  .foot{
+    grid-area: foot;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #footer{
+    overflow: hidden;
+  }
+  #category{
+    grid-area: category;
+  }
+  #flowerName{
+    grid-area: flowerName;
+  }
+  #image{
+    grid-area: image;
+  }
+  #price{
+    grid-area: price;
+  }
+  #instruction{
+    grid-area: instruction;
+  }
+  
+  a {
+    text-decoration: none;
+     color: white;
+    }
+  
+  /* removes automatic indent */
+  ul {
+    margin: 0; 
+    padding: 0;
+  }
+  
+  li {
+   float: left;
+  list-style-type: none;
+ 
+  }
+  .name{
+    color: brown;
+    font-weight: bold;
+    font-size:12px;
+    text-align: center;
+    margin: 1px;
+    width:69px;
+    padding:3px;
+   
+  }
+  .photo{
+   align-items: center; 
+    margin: 2px;
+    width:71px;
+    }
+    .price1{
+      background: pink;
+      text-align: center;
+      height:20px;
+      margin: 1px;
+      width: 69px;
+      padding:2px;
+    }
+    .inst{
+      background: skyblue;
+      text-align: center;
+      width:69px;
+      height:185px;
+      margin: 1px;
+      font-size: 12px;
+      padding:2px;
+    }
+    #link{
+      margin-top: 5px;
+    }
+  @media screen and (orientation: landscape) {
+  .namestyle {font-size: 1em;}
+  .bhead {font-size: 1em;}
+  li {font-size: 1em;}
+  }
+  
+  @media screen and (orientation: portrait) {
+  .namestyle {font-size: 1.5em;}
+  .bhead {font-size: 1.25em;}
+  li {font-size: 1.5em;}
+  }
+  
+  
